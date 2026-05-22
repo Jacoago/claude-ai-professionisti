@@ -312,6 +312,23 @@ nav.scrolled{padding:.5rem 2rem;background:rgba(10,14,26,.99)}
 /* ─── HERO POSITION ─── */
 .hero{position:relative;z-index:1}
 .hero > *:not(.hero-bg):not(.orb){position:relative;z-index:2}
+
+/* ─── BLOG SECTION ─── */
+.blog{padding:5rem 2rem;background:var(--bg)}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.8rem;margin-top:0}
+.bc{background:var(--card);border:1px solid var(--bo);border-radius:16px;overflow:hidden;transition:transform .25s,border-color .25s,box-shadow .25s;display:flex;flex-direction:column}
+.bc:hover{transform:translateY(-5px);border-color:rgba(108,99,255,.45);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.bc-img{height:180px;background:linear-gradient(135deg,#0d1425,#1a1f35);display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative;overflow:hidden}
+.bc-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(10,14,26,.6))}
+.bc-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
+.bc-cat{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--acc2);font-weight:700;margin-bottom:.6rem}
+.bc-title{font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:.7rem;line-height:1.4}
+.bc-excerpt{font-size:.85rem;color:var(--mu);line-height:1.6;flex:1;margin-bottom:1.2rem}
+.bc-meta{display:flex;justify-content:space-between;align-items:center;font-size:.75rem;color:var(--mu);margin-bottom:1rem}
+.bc-link{display:inline-flex;align-items:center;gap:.35rem;color:var(--acc2);font-size:.83rem;font-weight:600;text-decoration:none;transition:gap .2s}
+.bc-link:hover{gap:.6rem}
+.blog-all{text-align:center;margin-top:2.5rem}
+@media(max-width:700px){.blog{padding:3rem 1.2rem}.bc-img{height:140px}}
 </style>
 </head>
 <body>
@@ -319,7 +336,7 @@ nav.scrolled{padding:.5rem 2rem;background:rgba(10,14,26,.99)}
 <!-- NAV -->
 <nav>
   <span class="logo">Claude AI per Professionisti</span>
-  <a class="nav-cta" href="https://www.amazon.it/dp/B0GRR549BS" target="_blank" rel="noopener">Acquista su Amazon →</a>
+  <a href="#blog" style="color:var(--acc2);font-size:.85rem;text-decoration:none;margin-right:1rem">Blog</a><a class="nav-cta" href="https://www.amazon.it/dp/B0GRR549BS" target="_blank" rel="noopener">Acquista su Amazon →</a>
 </nav>
 
 <!-- HERO -->
@@ -536,6 +553,60 @@ nav.scrolled{padding:.5rem 2rem;background:rgba(10,14,26,.99)}
 </section>
 
 <!-- FAQ -->
+
+<!-- BLOG -->
+<section class="blog section-anchor" id="blog" aria-labelledby="blog-h">
+  <div class="si">
+    <p class="sl">Risorse gratuite</p>
+    <h2 id="blog-h" class="reveal">Leggi, impara, applica</h2>
+    <div class="blog-grid">
+
+      <article class="bc reveal stagger-1">
+        <div class="bc-img" style="background:linear-gradient(135deg,#1a0533,#2d1060);">🚀</div>
+        <div class="bc-body">
+          <div class="bc-cat">Guida pratica</div>
+          <h3 class="bc-title">Come usare Claude AI al lavoro: guida pratica 2026</h3>
+          <p class="bc-excerpt">Prompt efficaci, workflow testati e i 3 errori da evitare. Tutto quello che serve per iniziare a lavorare meglio con Claude AI dal primo giorno.</p>
+          <div class="bc-meta">
+            <span>📅 15 marzo 2026</span>
+            <span>⏱ 8 min</span>
+          </div>
+          <a class="bc-link" href="come-usare-claude-ai-lavoro.html">Leggi l'articolo →</a>
+        </div>
+      </article>
+
+      <article class="bc reveal stagger-2">
+        <div class="bc-img" style="background:linear-gradient(135deg,#0a1f3a,#0d3060);">⚔️</div>
+        <div class="bc-body">
+          <div class="bc-cat">Confronto</div>
+          <h3 class="bc-title">Claude AI vs ChatGPT: quale scegliere nel 2026</h3>
+          <p class="bc-excerpt">Tabella comparativa reale, differenze pratiche e una risposta onesta alla domanda che tutti si fanno. Senza bias, con test su casi d'uso professionali.</p>
+          <div class="bc-meta">
+            <span>📅 2 aprile 2026</span>
+            <span>⏱ 10 min</span>
+          </div>
+          <a class="bc-link" href="claude-ai-vs-chatgpt-2026.html">Leggi l'articolo →</a>
+        </div>
+      </article>
+
+      <article class="bc reveal stagger-3">
+        <div class="bc-img" style="background:linear-gradient(135deg,#0d2a0a,#1a4a10);">📝</div>
+        <div class="bc-body">
+          <div class="bc-cat">Prompt &amp; Template</div>
+          <h3 class="bc-title">I migliori prompt Claude AI per lavorare meglio nel 2026</h3>
+          <p class="bc-excerpt">50+ prompt testati per avvocati, manager, consulenti, medici e sviluppatori. Template pronti all'uso con istruzioni e varianti per ogni professione.</p>
+          <div class="bc-meta">
+            <span>📅 20 aprile 2026</span>
+            <span>⏱ 12 min</span>
+          </div>
+          <a class="bc-link" href="migliori-prompt-claude-ai-2026.html">Leggi l'articolo →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
 <section class="faq section-anchor" id="faq" aria-labelledby="faq-h">
   <div class="si" style="max-width:700px">
     <p class="sl">Domande frequenti</p>
