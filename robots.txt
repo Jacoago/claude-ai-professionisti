@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jacoago.github.io/claude-ai-professionisti/sitemap.xml
